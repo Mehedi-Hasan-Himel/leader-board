@@ -193,16 +193,28 @@ header nav div li a {
   color: red;
 }
 
-/* Mobile devices Layout: 320px to 480px*/
+/* Mobile devices Layout: 320px to 480px Start*/
 @media (min-width: 320px) and (max-width: 480px) {
+  header {
+    right: 0;
+  }
   header nav {
     width: 90vw;
   }
   header nav img {
     margin-left: 0;
+    width: 46px;
+    height: 46px;
+  }
+  header nav div {
+    margin-right: 0;
+  }
+  header nav div li {
+    margin-left: 1rem;
   }
   .container {
     width: 90vw;
+    padding: 1rem;
   }
   .players {
     -ms-grid-columns: (1fr)[2];
@@ -215,12 +227,18 @@ header nav div li a {
             flex-direction: column;
   }
   .players .single-player img {
-    width: 156px;
-    height: 156px;
+    width: 136px;
+    height: 136px;
   }
   .blogs {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-info {
+    margin-left: .5rem;
+  }
+  .blog-info .blog-title {
+    font-size: 1rem;
   }
   .courses {
     -ms-grid-columns: (1fr)[1];
@@ -234,6 +252,7 @@ header nav div li a {
   }
 }
 
+/* Mobile devices Layout: 320px to 480px End*/
 /* iPads, Tablets Layout: 481px to 768px */
 /* Small screens, laptops Layout: 769px to 1024px */
 /* Desktops, large screens: 1025px — 1200px */

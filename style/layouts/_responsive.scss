@@ -1,16 +1,26 @@
-/* Mobile devices Layout: 320px to 480px*/
+/* Mobile devices Layout: 320px to 480px Start*/
 
 @media (min-width: 320px) and (max-width: 480px) {
   header {
+    right: 0;
     nav {
       width: 90vw;
       img {
         margin-left: 0;
+        width: 46px;
+        height: 46px;
+      }
+      div {
+        margin-right: 0;
+        li {
+          margin-left: 1rem;
+        }
       }
     }
   }
   .container {
     width: 90vw;
+    padding: 1rem;
   }
 
   //   player start
@@ -20,8 +30,8 @@
     .single-player {
       flex-direction: column;
       img {
-        width: 156px;
-        height: 156px;
+        width: 136px;
+        height: 136px;
       }
     }
   }
@@ -30,6 +40,12 @@
   //   Blogs Start
   .blogs {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-info{
+     margin-left: .5rem;
+     .blog-title{
+        font-size: 1rem;
+     }
   }
   //   Blogs End
 
@@ -47,6 +63,7 @@
   }
   //   Course End
 }
+/* Mobile devices Layout: 320px to 480px End*/
 
 /* iPads, Tablets Layout: 481px to 768px */
 
