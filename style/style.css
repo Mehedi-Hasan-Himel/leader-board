@@ -17,6 +17,7 @@ main {
   background-color: #fff;
   width: 60vw;
   padding: 2rem;
+  border-radius: 3rem;
 }
 
 hr {
@@ -88,5 +89,52 @@ hr {
 .blogs .blog-info .blog-author a {
   text-decoration: none;
   color: #562eff;
+}
+
+.courses {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.courses .course {
+  border-radius: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 5px 5px 5px 5px #f3f0f0;
+          box-shadow: 5px 5px 5px 5px #f3f0f0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.courses .course:hover {
+  -webkit-box-shadow: 10px 10px 10px 10px #f3f0f0;
+          box-shadow: 10px 10px 10px 10px #f3f0f0;
+}
+
+.courses .course .course-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.courses .course .course-info .course-duration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #faa1a1;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

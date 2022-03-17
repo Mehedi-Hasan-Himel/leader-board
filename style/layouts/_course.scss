@@ -1,0 +1,27 @@
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+  .course {
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 5px rgb(243, 240, 240);
+    transition: .3s;
+    &:hover {
+      box-shadow: 10px 10px 10px 10px rgb(243, 240, 240);
+    }
+    .course-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .course-duration {
+        display: flex;
+        align-items: center;
+        background-color: rgb(250, 161, 161);
+        border-radius: 1rem;
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        color: red;
+      }
+    }
+  }
+}
