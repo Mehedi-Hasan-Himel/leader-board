@@ -1,0 +1,64 @@
+/* Mobile devices Layout: 320px to 480px*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  header {
+    nav {
+      width: 90vw;
+      img {
+        margin-left: 0;
+      }
+    }
+  }
+  .container {
+    width: 90vw;
+  }
+
+  //   player start
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    .single-player {
+      flex-direction: column;
+      img {
+        width: 156px;
+        height: 156px;
+      }
+    }
+  }
+  //   player end
+
+  //   Blogs Start
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  //   Blogs End
+
+  //   Course Start
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    .course {
+      margin-bottom: 2rem;
+      .course-banner {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  //   Course End
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Small screens, laptops Layout: 769px to 1024px */
+
+@media (min-width: 769px) and (max-width: 1024x) {
+}
+
+/* Desktops, large screens: 1025px — 1200px */
+
+@media (min-width: 1025px) and (max-width: 1200x) {
+}

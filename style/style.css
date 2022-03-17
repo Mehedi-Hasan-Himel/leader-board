@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 body {
   font-family: "Poppins", sans-serif;
@@ -29,6 +30,7 @@ main {
 
 hr {
   border: 1px solid #d1d1d1;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -76,6 +78,7 @@ header nav div li a {
 .section-title {
   color: #562eff;
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .players {
@@ -92,6 +95,9 @@ header nav div li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .players .single-player h3 {
@@ -117,9 +123,9 @@ header nav div li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blogs .blog-info {
@@ -186,4 +192,49 @@ header nav div li a {
   padding: 0.3rem 1rem 0.3rem 1rem;
   color: red;
 }
+
+/* Mobile devices Layout: 320px to 480px*/
+@media (min-width: 320px) and (max-width: 480px) {
+  header nav {
+    width: 90vw;
+  }
+  header nav img {
+    margin-left: 0;
+  }
+  .container {
+    width: 90vw;
+  }
+  .players {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .players .single-player {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .players .single-player img {
+    width: 156px;
+    height: 156px;
+  }
+  .blogs {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .courses {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .courses .course {
+    margin-bottom: 2rem;
+  }
+  .courses .course .course-banner img {
+    width: 100%;
+  }
+}
+
+/* iPads, Tablets Layout: 481px to 768px */
+/* Small screens, laptops Layout: 769px to 1024px */
+/* Desktops, large screens: 1025px — 1200px */
 /*# sourceMappingURL=style.css.map */
