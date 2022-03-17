@@ -65,20 +65,20 @@
 }
 /* Mobile devices Layout: 320px to 480px End*/
 
-/* iPads, Tablets Layout: 481px to 768px */
+/* iPads, Tablets Layout: 481px to 768px Start*/
 
 @media (min-width: 481px) and (max-width: 768px) {
   header {
-   //  right: 0;
+    //  right: 0;
     nav {
       width: 80vw;
       img {
-      //   margin-left: 0;
+        //   margin-left: 0;
         width: 46px;
         height: 46px;
       }
       div {
-      //   margin-right: 0;
+        //   margin-right: 0;
         li {
           margin-left: 1rem;
         }
@@ -131,12 +131,5 @@
   //   Course End
 }
 
-/* Small screens, laptops Layout: 769px to 1024px */
+/* iPads, Tablets Layout: 481px to 768px End*/
 
-@media (min-width: 769px) and (max-width: 1024x) {
-}
-
-/* Desktops, large screens: 1025px — 1200px */
-
-@media (min-width: 1025px) and (max-width: 1200x) {
-}
