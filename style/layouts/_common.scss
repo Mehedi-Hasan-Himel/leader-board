@@ -6,18 +6,22 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
-main{
-   display: flex;
-   justify-content: center;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-.container{
-   background-color: #fff;
-   width: 60vw;
-   padding: 2rem;
-   border-radius: 3rem;
+main {
+  display: flex;
+  justify-content: center;
 }
-hr{
-   border: 1px solid #d1d1d1;
+.container {
+  background-color: #fff;
+  width: 60vw;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+hr {
+  border: 1px solid #d1d1d1;
 }
 // Fonts End
-

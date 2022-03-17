@@ -1,0 +1,29 @@
+header {
+  background-color: #562eff;
+  padding: 1.5rem;
+  nav {
+    margin: 0 auto;
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    img {
+       margin-left: 2rem;
+      width: 56px;
+      height: 56px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+       margin-right: 2rem;
+
+      li {
+         margin-left: 2rem;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+        }
+      }
+    }
+  }
+}

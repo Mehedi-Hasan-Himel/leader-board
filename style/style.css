@@ -4,6 +4,13 @@ body {
   background-color: #f3f1ff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +29,48 @@ main {
 
 hr {
   border: 1px solid #d1d1d1;
+}
+
+header {
+  background-color: #562eff;
+  padding: 1.5rem;
+}
+
+header nav {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav img {
+  margin-left: 2rem;
+  width: 56px;
+  height: 56px;
+}
+
+header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+}
+
+header nav div li {
+  margin-left: 2rem;
+  list-style: none;
+}
+
+header nav div li a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .section-title {
@@ -96,7 +145,7 @@ hr {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 3rem;
+  grid-column-gap: 1rem;
 }
 
 .courses .course {
@@ -104,8 +153,8 @@ hr {
   padding: 1rem;
   -webkit-box-shadow: 5px 5px 5px 5px #f3f0f0;
           box-shadow: 5px 5px 5px 5px #f3f0f0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .courses .course:hover {
