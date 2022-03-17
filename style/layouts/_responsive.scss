@@ -41,11 +41,11 @@
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
-  .blog-info{
-     margin-left: .5rem;
-     .blog-title{
-        font-size: 1rem;
-     }
+  .blog-info {
+    margin-left: 0.5rem;
+    .blog-title {
+      font-size: 1rem;
+    }
   }
   //   Blogs End
 
@@ -68,6 +68,67 @@
 /* iPads, Tablets Layout: 481px to 768px */
 
 @media (min-width: 481px) and (max-width: 768px) {
+  header {
+   //  right: 0;
+    nav {
+      width: 80vw;
+      img {
+      //   margin-left: 0;
+        width: 46px;
+        height: 46px;
+      }
+      div {
+      //   margin-right: 0;
+        li {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  .container {
+    width: 80vw;
+    padding: 1.8rem;
+  }
+
+  //   player start
+
+  .players {
+    grid-template-columns: repeat(3, 1fr);
+    .single-player {
+      flex-direction: column;
+      img {
+        width: 116px;
+        height: 116px;
+      }
+    }
+  }
+  //   player end
+
+  //   Blogs Start
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog-info {
+    margin-left: 0.5rem;
+    .blog-title {
+      font-size: 1rem;
+    }
+  }
+  //   Blogs End
+
+  //   Course Start
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    .course {
+      margin-bottom: 2rem;
+      .course-banner {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  //   Course End
 }
 
 /* Small screens, laptops Layout: 769px to 1024px */
